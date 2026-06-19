@@ -1,15 +1,20 @@
-# Multimodal Cognitive Load and Mental Fatigue Detection
+# Detecting Cognitive Load and Mental Fatigue Using Micro-Behavior
 
 A real-time fatigue detection system that combines eye state classification (CNN), facial feature analysis (OpenCV), and typing behavior analysis to classify cognitive fatigue into **Low**, **Medium**, and **High** levels using an LSTM network.
 
 ## Features
 
-- Real-time webcam-based eye state detection using a custom CNN
-- Facial feature extraction (Eye Aspect Ratio, Mouth Aspect Ratio, Gaze Direction) using OpenCV
-- Typing behavior analysis (WPM, inter-key delay, error rate)
+- Real-time eye-state detection using a custom CNN
+- Facial feature extraction using OpenCV (EAR, gaze ratio, mouth opening, blink detection)
+- Keystroke dynamics monitoring (WPM, inter-key delay, error rate)
 - Multimodal feature fusion into a 137-dimensional feature vector
 - Temporal fatigue classification using LSTM
-- Live web dashboard built with Streamlit
+- Rule-based fatigue verification for increased robustness
+- Multi-employee login and monitoring system
+- Automated break reminders for prolonged fatigue
+- SQLite-based fatigue history logging
+- Company-wide analytics dashboard with fatigue trends and workload insights
+- Streamlit-based real-time web application
 
 ## Architecture
 
@@ -41,8 +46,8 @@ Keyboard Input → Typing Features (3-dim)
 
 | Model | Validation Accuracy |
 |---------|--------------------|
-| CNN (Eye State Detection) | 84.4% |
-| LSTM (Fatigue Classification) | 96.5%* |
+| CNN (Eye State Detection) | 87.81%*|
+| LSTM (Fatigue Classification) | 99.18%* |
 
 \* Initial version trained on simulated data. The final model was retrained using real collected sessions.
 
