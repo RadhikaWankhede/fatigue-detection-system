@@ -94,6 +94,10 @@ multimodal-fatigue-detection/
 └── README.md
 ```
 
+## Pre-trained Weights
+
+Place `cnn_full_weights.weights.h5` and `lstm_real_weights.weights.h5` in the project root.
+
 ## Author
 
 **Radhika Rajendra Wankhede**  
